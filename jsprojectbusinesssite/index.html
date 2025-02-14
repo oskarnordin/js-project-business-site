@@ -1,30 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Header with and navigation bar -->
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  </head>
+
+  <title>Sushi World</title>
+    <body>
+
+    <div class="video-container">
+        <div class="overlay">
+          <p class="emoticon">(´｡• ᵕ •｡`) ♡</p>
+          <h1>Sushi World</h1>
+          </div>
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="img/sushi_720p_30fps.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <div class="header">
-        <img src="img/sushi-logo-trans.png" class="header-img">
         <div class="flex-navi">
-          <div class="flex-navi-button"><a href="">Hitta hit</a></p></div>
-          <div class="flex-navi-button"><a href="">Meny</a></div>
-          <div class="flex-navi-button"><a href="">Om oss</a></div>
-          <div class="flex-navi-button"><a href="">Kontakt</a></div>
-          <div class="flex-navi-button"><a href="">Arbeta här</a></div>
+          <button id="button-red">A</button>
+          <button id="button-red">B</button>
+          <button id="button-red"><a href="#bookTable">BOOK TABLE</a></button>
+          <button id="button-red">D</button>
+          <button id="button-red">E</button>
         </div>
     </div>
 </head>
-<body><div class="container">
+
+<!-- Grid with images -->
+<div class="container">
     <div class="flex-item-1"><p><img src="img/img-1.jpg" class="img-container"></p></div>
     <div class="flex-item-2"><p><img src="img/img-2.jpg" class="img-container"></p></div>
     <div class="flex-item-3"><p><img src="img/img-3.jpg" class="img-container"></p></div>
     <div class="flex-item-4"><p><img src="img/img-4.jpg" class="img-container"></p></div>
-</body>
-<footer>
-    <div class="footer"><p>Footer</p></div>
+  </div>
+
+
+<!-- Footer containing contact form -->
+<div class="container" id="bookTable">
+<div class="form-container">
+      <form>
+        <h2>For larger companies please call!</h2>
+        <p>08-1234567</p>
+        <form action="http://httpbin.org/anything" method="post">
+        <fieldset>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Sushi McSushi"/>  
+            </label>
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="E-mail@example.com"/>
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="number" name="phone" placeholder="+46 123456789"/>
+          </label>
+          <label>
+            <span>Date</span>
+            <input type="date" name="date" placeholder="date"/>
+          </label>
+          <label>
+            <span>Time</span>
+            <input type="time" id="appt" name="appt" min="16:00" max="21:00" required />
+          </label>
+          <label>
+            <span>Guests</span>
+            <input type="number" id="numberInput" name="guests" min="1" max="9" step="1" placeholder="Number of guests">
+        </label>
+        </fieldset>
+        <button type="submit" id="button-red">BOOK TABLE</button>
+          </form>
+        </form>
+    </div>
+</div>
+
+<footer>s
+  <div class="footer"></div>
 </footer>
+
 </html>
+</body>
