@@ -12,27 +12,38 @@
 
   <title>Sushi World</title>
     <body>
-
     <div class="video-container">
         <div class="overlay">
           <p class="emoticon">(´｡• ᵕ •｡`) ♡</p>
-          <h1>Sushi World</h1>
+          <h1 id="main-title">Sushi World</h1>
+          <button id="hamburger-btn">☰</button>
+          <nav id="nav-menu" class="hidden">
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">FIND US</a></li>
+                <li><a href="#bookTable">BOOK TABLE</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+            </nav>
           </div>
         <video autoplay loop muted playsinline class="hero-video">
             <source src="img/sushi_720p_30fps.mp4" type="video/mp4">
         </video>
+        </nav>
     </div>
 
     <div class="header">
         <div class="flex-navi">
-          <button id="button-red">A</button>
-          <button id="button-red">B</button>
+          <button id="button-red">MENU</button>
+          <button id="button-red">FIND US</button>
           <button id="button-red"><a href="#bookTable">BOOK TABLE</a></button>
-          <button id="button-red">D</button>
-          <button id="button-red">E</button>
+          <button id="button-red">ABOUT US</button>
         </div>
+        <div class="mobile-text-container"><p class="mobile-text">Welcome to the place where we fill both our stomaches and our hearts with sushi!<br><br>🍣💗</div>
+        </p>
     </div>
 </head>
+
 
 <!-- Grid with images -->
 <div class="container">
@@ -53,7 +64,10 @@
         <fieldset>
           <label>
             <span>Name</span>
-            <input type="text" name="name" placeholder="Sushi McSushi"/>  
+            <input 
+            type="text"
+            name="name"
+            placeholder="Sushi McSushi"/>  
             </label>
           <label>
             <span>E-mail</span>
@@ -82,9 +96,10 @@
     </div>
 </div>
 
-<footer>s
+<footer>
   <div class="footer"></div>
 </footer>
 
+<script src="script.js"></script>
 </html>
 </body>
