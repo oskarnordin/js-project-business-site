@@ -1,10 +1,11 @@
-document.getElementById("hamburger").addEventListener("click", function() {
-    let menu = document.getElementById("nav-menu")
-    let title = document.getElementById("main-title")
+document.getElementById("hamburger").addEventListener("click", function () {
+    let hamburger = document.getElementById("hamburger");
+    let navMenu = document.getElementById("nav-menu");
 
-    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "flex" : "none"
-})
-
-document.getElementById("hamburger").addEventListener("click", function() {
-    this.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("show");
 });
+
+// document.getElementById("hamburger").addEventListener("click", function() {
+//     this.classList.toggle("active");
+// });
