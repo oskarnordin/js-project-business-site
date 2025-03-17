@@ -385,7 +385,7 @@ h2{
 
 .header{
   display: grid;
-  min-height: 800px;
+  min-height: 400px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
   background-color: rgb(245, 173, 173);
@@ -508,7 +508,7 @@ h3{
 
 /* Animation for active state */
 .hamburger.active span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger.active span:nth-child(2) {

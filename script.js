@@ -6,6 +6,6 @@ document.getElementById("hamburger").addEventListener("click", function () {
     navMenu.classList.toggle("show");
 });
 
-// document.getElementById("hamburger").addEventListener("click", function() {
-//     this.classList.toggle("active");
-// });
+
+
+
