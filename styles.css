@@ -172,7 +172,7 @@ h2{
   border-radius: 10px;
   width: 90%;
   max-width: 250px;
-  height: 80px;
+  height: 100px;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
@@ -182,6 +182,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .menuButtons:hover {
@@ -311,7 +312,7 @@ label{
 }
 
 span{
-  font-size: 20px;
+  font-size: 16px;
   width: 30%;
   text-align: right;
   margin-right: 15px;
@@ -321,7 +322,7 @@ span{
   
 input{
   width: 100%;
-  font-size: 20px;
+  font-size: 16x;
   padding-top: 5px;
   padding-bottom: 5px;
   border: none;
@@ -365,13 +366,13 @@ select{
 
 h3{
   display: flex;
-  color: rgb(119, 113, 113);
+  color: rgb(0, 0, 0);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
   opacity: 85%;
 }
 
@@ -424,7 +425,7 @@ p{
   display: inline-block;
 }
 
-.menu {;
+.menu {
   background-color: white; /* Adjust as needed */
   z-index: 1000; /* Ensure it appears above other elements */
   display: none; /* Initially hidden */
@@ -527,7 +528,6 @@ h1{
 
 .flex-navi-button{
   display: flex;
-  margin-top: 25px;
   background-color: rgb(247, 236, 236);
   justify-content: center;
   align-items: center;
@@ -597,17 +597,17 @@ h3{
   opacity: 0;
   visibility: hidden;
   flex-direction: column;
-  position: fixed; /* Changed from sticky to fixed */
-  top: 0; /* Ensure it sticks to the top */
-  left: 0;
-  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 20px;
   background-color: #fc7272;
   width: 100%;
-  height: 35vh; /* Full viewport height */
+  height: 100vh;
   transform: translateY(-10px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  display: flex; /* Ensure it's always present in the layout */
-  z-index: 1000; /* Ensure it appears above other elements */
+  display: flex;
+  z-index: 1000;
 }
 
 #nav-menu.show {
@@ -624,7 +624,6 @@ h3{
 
 /* Menu links */
 #nav-menu ul {
-  margin-top: 75px;
   list-style: none;
   padding: 0;
 }
@@ -681,6 +680,25 @@ h3{
 }
 
 #button-red:hover {
+  background-color: #fc7272;
+}
+
+#bookTable{
+  background: #ef6351;
+  color: white;
+  min-height: 100px;
+  border: none;
+  font-size: 24px;
+  font-family: Oxanium;
+  min-height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: normal;
+  appearance: none;
+}
+
+#bookTable:hover {
   background-color: #fc7272;
 }
 
